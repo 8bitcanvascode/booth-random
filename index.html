@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script>
+        // ここにBOOTHの作品URLを並べる
+        const urls = [
+            "https://8bitcanvas.booth.pm/items/7423938",
+            "https://8bitcanvas.booth.pm/items/7757139",
+            "https://8bitcanvas.booth.pm/items/7117191"
+        ];
+
+        window.onload = function() {
+            // 配列からランダムに一つ選ぶ
+            const randomUrl = urls[Math.floor(Math.random() * urls.length)];
+            // 転送
+            window.location.replace(randomUrl);
+        };
+    </script>
+</head>
+<body>
+    <p>ランダムなBOOTHのページに転送中…</p>
+</body>
+</html>
